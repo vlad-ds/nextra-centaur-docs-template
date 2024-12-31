@@ -29,8 +29,16 @@ function extractContent(filePath) {
   return contentWithoutFrontmatter.trim(); // Trim extra whitespace
 }
 
+// Export the main function so it can be imported elsewhere
 function generateContentFile() {
-  const pagesDir = path.join(process.cwd(), 'pages'); // Directory containing pages
+  const pagesDir = path.join(process.cwd(), 'pages');
+  const publicDir = path.join(process.cwd(), 'public');
+  
+  // Ensure public directory exists
+  if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+  }
+  
   const markdownFiles = getMarkdownFiles(pagesDir);
   let combinedContent = '';
 
@@ -44,4 +52,9 @@ function generateContentFile() {
   console.log(`Generated content file at: ${outputFilePath}`);
 }
 
-generateContentFile();
+// Only run directly if this script is executed directly
+if (require.main === module) {
+  generateContentFile();
+}
+
+module.exports = generateContentFile;
