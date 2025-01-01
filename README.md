@@ -1,12 +1,15 @@
 # Nextra-Centaur Docs Template 
 
-Nextra-Centaur is a fork of [Nextra](https://nextra.site) tuned for human-AI collaboration! 
+Nextra-Centaur is a fork of [Nextra](https://nextra.site) tuned for human-AI collaboration!
 
 More precisely, it is a fork of @shuding's [Nextra-Docs-Template](https://github.com/shuding/nextra-docs-template). You can see the changes [here](https://github.com/shuding/nextra-docs-template/compare/main...vlad-ds:nextra-centaur-docs-template:main).
 
 Nextra-Centaur helps you create public knowledge bases that are easy to read and edit by humans and AIs alike.
 
 ## Centaur features
+
+![UI demo](./public/nextra-docs-centaur.png)
+
 - Click the copy button on any page to easily share the page content with your AI
 - Click the export button to get the whole knowledge base in a single plaintext file
 - Alternatively, you can go to `<your-homepage>/content.txt` to get the plaintext export
