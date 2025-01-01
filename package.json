@@ -4,8 +4,7 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generateContentFile.js",
-    "build": "next build",
+    "build": "pnpm run generate-content && next build",
     "start": "next start"
   },
   "repository": {
