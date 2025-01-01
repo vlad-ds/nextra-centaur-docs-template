@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Nextra docs template",
   "scripts": {
+    "generate-content": "node scripts/generateContentFile.js",
     "dev": "next dev",
     "build": "pnpm run generate-content && next build",
     "start": "next start"
