@@ -6,8 +6,6 @@ More precisely, it is a fork of @shuding's [Nextra-Docs-Template](https://github
 
 Nextra-Centaur helps you create public knowledge bases that are easy to read and edit by humans and AIs alike.
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fvlad-ds%2Fnextra-centaur-docs-template&showOptionalTeamCreation=false)
-
 ## Centaur features
 - Click the copy button on any page to easily share the page content with your AI
 - Click the export button to get the whole knowledge base in a single plaintext file
@@ -31,6 +29,8 @@ Feel free to contribute!
 - For the export feature, we run a script at build time to generate a `content.txt` file in the `public` folder. This file contains the content of all the pages, concatenated together.
 
 ## How to use
+
+[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fvlad-ds%2Fnextra-centaur-docs-template&showOptionalTeamCreation=false)
 
 - Fork this template
     - To deploy on Vercel, click the Deploy button above.
