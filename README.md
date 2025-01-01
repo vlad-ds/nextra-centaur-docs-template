@@ -6,6 +6,8 @@ More precisely, it is a fork of @shuding's [Nextra-Docs-Template](https://github
 
 Nextra-Centaur helps you create public knowledge bases that are easy to read and edit by humans and AIs alike.
 
+Live demo: https://nextra-centaur-docs-template.vercel.app/
+
 ## Centaur features
 
 ![UI demo](./public/nextra-docs-centaur.png)
