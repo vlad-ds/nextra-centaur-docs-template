@@ -9,8 +9,9 @@ Nextra-Centaur helps you create public knowledge bases that are easy to read and
 [![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fvlad-ds%2Fnextra-centaur-docs-template&showOptionalTeamCreation=false)
 
 ## Centaur features
-- Copy button on every page to easily share the page content with your AI
-- Export button to get the whole knowledge base in a single plaintext file
+- Click the copy button on any page to easily share the page content with your AI
+- Click the export button to get the whole knowledge base in a single plaintext file
+- Alternatively, you can go to `<your-homepage>/content.txt` to get the plaintext export
 
 ## Future Centaur features
 A lot needs to be done! Here are some ideas:
