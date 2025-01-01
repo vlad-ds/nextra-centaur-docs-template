@@ -2,16 +2,11 @@
 
 Nextra-Centaur is a fork of [Nextra](https://nextra.site) tuned for human-AI collaboration! 
 
-Use it to create public knowledge bases that are easy to read and edit by humans and AIs alike.
+More precisely, it is a fork of @shuding's [Nextra-Docs-Template](https://github.com/shuding/nextra-docs-template). You can see the changes [here](https://github.com/shuding/nextra-docs-template/compare/main...vlad-ds:nextra-centaur-docs-template:main).
 
-How it works:
-- Fork this repository (select "Use this template" in the UI)
-- Create your knowledge base (in collaboration with your AI) by writing markdown files in the `pages` folder. Read the [Nextra documentation](https://nextra.site/docs) for more information.
-- Deploy your knowledge base on Vercel or any other platform that supports Next.js.
-- Every page has a copy button that allows you to copy the page content to your clipboard. This makes it easy to share the page content with your AI!
-- Once you deploy your site, go to `<your-homepage>/api/export` to get the whole knowledge base in a single plaintext file! Paste this in your AI chat or directly provide the link to your AI.
+Nextra-Centaur helps you create public knowledge bases that are easy to read and edit by humans and AIs alike.
 
-TODO: add live demo link
+[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fvlad-ds%2Fnextra-centaur-docs-template&showOptionalTeamCreation=false)
 
 ## Centaur features
 - Copy button on every page to easily share the page content with your AI
@@ -30,13 +25,29 @@ A lot needs to be done! Here are some ideas:
 
 Feel free to contribute!
 
+## How it works
+- The copy button is a React component that is added to every page.
+- For the export feature, we run a script at build time to generate a `content.txt` file in the `public` folder. This file contains the content of all the pages, concatenated together.
+
+## How to use
+
+- Fork this template
+    - To deploy on Vercel, click the Deploy button above.
+    - Or you can select "Use this template" in GitHub, but you will have to figure out how to deploy it yourself.
+- Create your knowledge base by writing markdown files in the `pages` folder. Read the [Nextra documentation](https://nextra.site/docs) for more information. See below for a prompt that will help your AI write the knowledge base.
+- Deploy your knowledge base on Vercel or any other platform that supports Next.js. (If you clicked on the Vercel button above, it should be automatically deployed to Vercel.)
+- Every page has a copy button that allows you to copy the page content to your clipboard. This makes it easy to share the page content with your AI!
+- Once you deploy your site, go to `<your-homepage>/api/export` to get the whole knowledge base in a single plaintext file! Paste this in your AI chat or directly provide the link to your AI.
+
+TODO: add live demo link
+
 ## AI prompt to write your knowledge base
 
 Use this prompt to get help writing your knowledge base:
 
-> You are going to write a knowledge base on the topic of `TOPIC`. The knowledge base will be implemented in Nextra-Centaur, an AI-friendly fork of Nextra. The knowledge base contains articles in MDX format. They are organized in nested folders. First, define the structure of the knowledge base. Then, write each article in MDX format. The articles must be added to the `pages/` folder of the repository. Each folder has a `_meta.json` file that defines the metadata for the pages in that folder. Guide the user to add the articles to the `pages/` folder and to define the metadata for each page.
+> You are going to write a knowledge base on the topic of `TOPIC`. The knowledge base will be implemented in Nextra-Centaur, an AI-friendly fork of Nextra. The knowledge base contains articles in MDX format. They are organized in nested folders. First, define the structure of the knowledge base. Then, add each article in MDX format. The articles must be added to the `pages/` folder of the repository. Each folder has a `_meta.json` file that defines the metadata for the pages in that folder. Guide the user to add the articles to the `pages/` folder and to define the metadata for each page. You can define a list of terminal commands that the user can run in the repository root. Finally, write the content of each article.
 
-In the future, it would be great to have a scaffolding that will allow the AI to write the knowledge base automatically.
+In the future, I plan to add a scaffolding that will allow the AI to write the knowledge base automatically!
 
 ## Quick Start
 
